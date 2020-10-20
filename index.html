@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>清泽心雨报名入口</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<div class="box">
+			<div class="header">
+				<!-- <div style="display:inline-block;margin-left: -280px;margin-top: -20px;"> -->
+				<div style="float: left;width: 25%;height: 128px;">
+					<img src="img/qzxy.png" style="width: 100%;height: 100%;">
+				</div>
+				<!-- <div style="display:inline-block;text-align: center;top: 50%;"> -->
+				<div style="float: left;text-align: center;width: 100%;height: 128px; line-height: 200px; margin-top: -128px;">
+					<!-- <p class="p0" style="font-family: 华文行楷;font-size: 48px;color: #3742fa;text-align: center;margin-left: 60px;">报名页面</p> -->
+					<p class="p0" style="font-family: 华文行楷;font-size: 48px;color: #55A8F2;text-align: center;margin-left: 60px;">报名页面</p>
+				</div>
+			</div>
+			<div class="box2" style="height: 210px;width: 100%;">
+				<div class="box1" style="width:64%;display: inline-block;font-size: 20px; float: left;">
+					姓名:
+					<input class="border" type="text" />
+					性别:<input class="border" type="text" />
+					<br />
+					专业:<input class="border" type="text" />
+					班级:<input class="border" type="tel" />
+					<br />
+					电话:<input class="border" style="width: 80%;" type="tel" />
+				</div>
+				<div style="float: left; width: 34%;height: 100%;">
+					<label id="ico" for="file">
+						<div class="pic" style="float: left;width: auto;height: 210px;">
+							<div style="float: left;text-align: center;margin-left: 20px; display: flex;align-items: center;margin-top: 40px;">
+								<p class="p1" style="font-family: 华文行楷;">上传照片</p>
+							</div>
+							<div style="float: left;width: auto;height: 210px;">
+								<img class="border" alt="头像" src="img/uppload_photo.png" style="padding: 0px;background-color:#fff;border-radius:25px;height: 210px; width: auto; margin-left: 20px;">
+							</div>
+							<div style="height: 100%;width: 65%;">
+								<input id="file" type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" "imgPreview(this)">
+							</div>
+						</div>
+					</label>
+				</div>
+			</div>
+			<div>
+				<div style="font-size:20px;height: 80px;width: 100%;margin-top: 16px;">
+					<div style="width: 9%; height: 100%; float: left;display: flex;align-items: center;">
+						<p>志愿：</p>
+					</div>
+					<div style="width: 44%;float: left;justify-content: flex-end;">
+						<select class="border"  style="width: 80%;text-align: right;">
+							<option value="" selected="selected"></option>
+							<option value="general office">综合办公室</option>
+							<option value="public relations planning department">公关策划部</option>
+							<option value="cyber security">网络安全部(蓝之青)</option>
+							<option value="visual design department">视觉设计部(卡乐坊)</option>
+							<option value="technical development department">技术开发部(UED)</option>
+							<option value="integrated media group">综合媒体集团</option>
+							<option value="news corp">新闻集团</option>
+							<option value="video group">视频集团(微效坊、微影像、电视台)</option>
+						</select></div>
+					<div style="width: 44%;float: left;justify-content: flex-end;">
+						<select class="border"  style="width: 80%;text-align: right;justify-content: flex-end;">
+							<option value="" selected="selected"></option>
+							<option value="general office">综合办公室</option>
+							<option value="public relations planning department">公关策划部</option>
+							<option value="cyber security">网络安全部(蓝之青)</option>
+							<option value="visual design department">视觉设计部(卡乐坊)</option>
+							<option value="technical development department">技术开发部(UED)</option>
+							<option value="integrated media group">综合媒体集团</option>
+							<option value="news corp">新闻集团</option>
+							<option value="video group">视频集团(微效坊、微影像、电视台)</option>
+						</select></div>
+				</div>
+				<div class="reason" style="font-size: 20px;width: 100%;">
+					<div style="width: 100%; text-align: center;">
+						<p>填报理由</p>
+					</div>
+					<div>
+						<input class="border"  style="width: 95%;height: 110px; vertical-align: top;" type="text">
+					</div>
+				</div>
+				<input class="submit" id="submit" type="button" onclick="alert('submited')" style="margin:auto" value="提交">
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$("#submit").click(function() {
+			var formData = $('ok').serialize();
+			console.log(formData);
+			// alert(formData);
+			// $.ajax({
+			// 	url: "****",
+
+			// 	dataType: "json",
+			// 	type: "post",
+			// 	data: formData,
+
+			// 	success: function(result) {
+			// 		alert(result.msg);
+			// 	},
+			// 	error: function(data) {
+			// 		alert("请求出错");
+			// 		alert(data);
+			// 	}
+			// });
+		});
+	</script>
+
+</html>
