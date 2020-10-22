@@ -21,7 +21,7 @@
 	padding: 20px 35px 20px 35px;
 	border: 1px solid #6dc7ef;
 	/* background-color: rgba(131, 193, 235, 0.5); */
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 20px;
 	z-index: 1;
 	display: flexbox;
@@ -30,6 +30,7 @@
 	font-family: 华文行楷;
 	font-size: 32px;
 }
+
 .box2 {
 	position: relative;
 	width: 100%;
@@ -64,8 +65,8 @@
 }
 
 #file {
-	width: 0;
-	height: 0;
+	width: 100%;
+	height: 100%;
 }
 
 input {
@@ -113,12 +114,26 @@ body {
 	margin-top: 20px;
 } */
 
-.border{
-/* 	outline:none;
+.border {
+	/* 	outline:none;
 	border-top-style: groove;
 	border-right-style: groove;
 	border-bottom-style: groove;
 	border-left-style: groove; */
 	/* border:2px solid #7abdff; */
-	border:2px solid #a3cfff;
+	border: 2px solid #a3cfff;
+}
+
+.filepath {
+	opacity: 0;
+	margin: 0px;
+}
+
+#upload_head_pic {
+	border: 2px solid #a3cfff;
+	border-radius: 15px;
+	margin-left: 10px;
+	padding: 10px;
+	background: url(../img/upload.png) no-repeat center center;
+	background-size: 50%;
 }
